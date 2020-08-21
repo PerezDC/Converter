@@ -1,0 +1,26 @@
+﻿@model ConvertingWebApp.Models.Class
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Converting For You</title>
+</head>
+<body>
+    <form asp-action="Index" method ="post">
+        <div>
+            <label asp-for="MPH">MPH: </label>
+            <input asp-for="MPH" />
+        </div>
+        <div>
+            <label asp-for="KPH">KPH: </label>
+            <input asp-for="KPH" />
+        </div>
+        <button type="submit">Enter</button>
+    </form>
+</body>
+</html>
